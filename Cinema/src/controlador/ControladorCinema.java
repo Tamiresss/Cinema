@@ -64,9 +64,9 @@ public class ControladorCinema {
     public static void atualizarTabela(JTable tabela) {
         DefaultTableModel modelo = new DefaultTableModel();
         //definindo o cabeçalho da tabela
-        modelo.addColumn("Codigo");
+        modelo.addColumn("Código");
         modelo.addColumn("Capacidade");
-        modelo.addColumn("Endereco");
+        modelo.addColumn("Endereço");
         List<Cinema> resultados = DaoCinema.consultar();
         for (Cinema objeto : resultados) {
             Vector linha = new Vector();
